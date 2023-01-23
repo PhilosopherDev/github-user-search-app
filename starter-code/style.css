@@ -133,3 +133,31 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+
+:root {
+    /* font-family */
+
+    --ff-space-mono: 'Space Mono', monospace;
+}
+
+/* color */
+
+:root.light {
+    --clr-primary: #0079ff;
+    --clr-font-color-1: #697c9a;
+    --clr-font-color-2: #4b6a9b;
+    --clr-font-color-3: #2b3442;
+    --clr-font-color-4: #f74646;
+    --clr-bg-1: #f6f8ff;
+    --clr-bg-2: #fefefe;
+}
+
+:root.dark {
+    --clr-primary: #0079ff;
+    --clr-font-color-1: white;
+    --clr-font-color-2: white;
+    --clr-font-color-3: white;
+    --clr-font-color-4: #f74646;
+    --clr-bg-1: #141d2f;
+    --clr-bg-2: #1e2a47;
+}
