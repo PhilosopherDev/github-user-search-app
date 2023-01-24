@@ -1,28 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
   <title>Frontend Mentor | GitHub user search app</title>
 </head>
-<body>
 
-  devfinder
-
-  Light
-  Dark
-
-  Search GitHub username...
-  Search
-
-  Joined
-
-  Repos
-  Followers
-  Following
-
+<body data-theme="">
+  <div class="container">
+    <div class="header">
+      <div class="header__title">devfinder</div>
+      <div class="mode">
+        <div class="mode__text">Dark</div>
+        <div class="mode__icon"></div>
+      </div>
+    </div>
+    <div class="search header__search">
+      <div class="search__icon"></div>
+      <input class="search__input search__icon__input" placeholder="Search GitHub username..."></input>
+      <div class="search__error"></div>
+      <span class="search__btn">Search</span>
+    </div>
+    <div class="card">
+      <div class="card__thumbnail"></div>
+      <div class="card__title"></div>
+      <div class="card__tag"></div>
+      <div class="card__date"></div>
+      <div class="card__description"></div>
+      <div class="card__data"></div>
+      <div class="card__link"></div>
+    </div>
+  </div>
 </body>
+
 </html>
