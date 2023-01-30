@@ -143,6 +143,7 @@ table {
     --clr-font-color-3: #2b3442;
     --clr-font-color-4: #f74646;
     --clr-font-color-5: #222731;
+    --clr-font-color-6: #222731;
     --clr-bg-1: #f6f8ff;
     --clr-bg-2: #fefefe;
 
@@ -159,6 +160,7 @@ table {
     --clr-font-color-3: white;
     --clr-font-color-4: #f74646;
     --clr-font-color-5: #90a4d4;
+    --clr-font-color-6: white;
     --clr-bg-1: #141d2f;
     --clr-bg-2: #1e2a47;
 }
@@ -185,6 +187,7 @@ table {
     font-family: var(--ff-space-mono);
     font-size: 1.625rem;
     font-weight: 700;
+    color: var(--clr-font-color-6);
 }
 
 .mode {
@@ -193,9 +196,11 @@ table {
     color: var(--clr-font-color-1);
 }
 
-.mode:hover {
+.mode:hover,
+.mode:hover svg {
     cursor: pointer;
-    filter: brightness(0.4);
+    color: var(--clr-font-color-5);
+    fill: var(--clr-font-color-5);
 }
 
 .mode__text {
@@ -207,11 +212,8 @@ table {
     padding-right: 1rem;
 }
 
-.mode__icon {
-    width: 20px;
-    height: 20px;
-    background-image: url(./assets/icon-moon.svg);
-    background-repeat: no-repeat;
+.mode__icon svg {
+    fill: var(--clr-font-color-2);
 }
 
 /* search */
@@ -241,6 +243,7 @@ table {
     height: 100%;
     border: none;
     outline: none;
+    background-color: var(--clr-bg-2);
     caret-color: var(--clr-primary);
     font-family: var(--ff-space-mono);
     font-weight: 400;
@@ -251,6 +254,7 @@ table {
     font-family: var(--ff-space-mono);
     font-weight: 400;
     font-size: 1.125rem;
+    color: var(--clr-font-color-2)
 }
 
 .search__btn {
@@ -350,6 +354,7 @@ table {
     font-size: 1.375rem;
     font-weight: 700;
     line-height: 2rem;
+    color: var(--clr-font-color-3);
 }
 
 .card__icon-section {
@@ -366,6 +371,10 @@ table {
     cursor: pointer;
 }
 
+.link svg {
+    fill: var(--clr-font-color-2);
+}
+
 .icon {
     width: 1.25rem;
     height: 1.25rem;
@@ -373,25 +382,13 @@ table {
     background-size: contain;
 }
 
+.icon-title {
+    color: var(--clr-font-color-2);
+}
+
 .icon-disabled {
     opacity: 0.5;
     cursor: auto;
-}
-
-.icon-location {
-    background-image: url('./assets/icon-location.svg');
-}
-
-.icon-twitter {
-    background-image: url('./assets/icon-twitter.svg');
-}
-
-.icon-web {
-    background-image: url('./assets/icon-website.svg');
-}
-
-.icon-company {
-    background-image: url('./assets/icon-company.svg');
 }
 
 /* mix */
