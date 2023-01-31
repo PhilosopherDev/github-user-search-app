@@ -264,6 +264,7 @@ table {
 
     font-family: var(--ff-space-mono);
     font-weight: 700;
+    font-size: 1rem;
     border-radius: 10px;
     width: 106px;
     height: 50px;
@@ -394,7 +395,6 @@ table {
 /* mix */
 
 .header__search {
-    display: flex;
     margin-top: 2.25rem;
 }
 
@@ -459,9 +459,28 @@ table {
 
 @media screen and (max-width: 610px) {
 
-    .header,
+    .header {
+        width: 327px;
+    }
+
     .search {
         width: 327px;
+        padding: 0 7.5px 0 1rem;
+    }
+
+    .search__input::placeholder {
+        font-size: 0.8125rem;
+    }
+
+    .search__btn {
+        font-size: 0.875rem;
+        line-height: 20px;
+        width: 84px;
+        height: 46px;
+    }
+
+    .search__icon__input {
+        margin: 0 7px 0 8.5px;
     }
 
     .card {
