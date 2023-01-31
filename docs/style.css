@@ -468,6 +468,10 @@ table {
         padding: 0 7.5px 0 1rem;
     }
 
+    .search__input {
+        width: 65%;
+    }
+
     .search__input::placeholder {
         font-size: 0.8125rem;
     }
