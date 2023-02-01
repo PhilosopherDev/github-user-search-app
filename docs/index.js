@@ -1,3 +1,4 @@
+import controller from './controller.js';
 
 const toggleMode = () => {
     const body = document.querySelector('body');
@@ -42,3 +43,7 @@ const toggleMode = () => {
 const modeEl = document.querySelector('.mode');
 
 modeEl.addEventListener('click', toggleMode);
+
+window.addEventListener('load', () => {
+    controller.getUserName('philosopherprogrammer');
+});
