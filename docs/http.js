@@ -1,7 +1,7 @@
 import { Octokit } from "https://cdn.skypack.dev/@octokit/core";
 
 const octokit = new Octokit({
-    auth: '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'
+    auth: ''
 })
 
 const get = async (username) => {
