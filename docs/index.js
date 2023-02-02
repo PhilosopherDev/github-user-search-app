@@ -40,10 +40,15 @@ const toggleMode = () => {
     }
 }
 
+const onSearch = () => {
+    const input = document.querySelector('.search__input');
+    controller.getUserName(input.value);
+}
+
 const modeEl = document.querySelector('.mode');
 
 modeEl.addEventListener('click', toggleMode);
 
-window.addEventListener('load', () => {
-    controller.getUserName('philosopherprogrammer');
-});
+const searchBtn = document.querySelector('.search__btn');
+
+searchBtn.addEventListener('click', onSearch);
