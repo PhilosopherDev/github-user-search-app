@@ -1,7 +1,7 @@
 import http from './http.js';
 
-const getUserName = (username) => {
-    http.get(username);
+const getUserName = async (username) => {
+    return await http.get(username);
 }
 
 export default {

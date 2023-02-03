@@ -3,11 +3,16 @@ import { Octokit } from "https://cdn.skypack.dev/@octokit/core";
 const octokit = new Octokit({})
 
 const get = async (username) => {
-    const user = await octokit.request(`GET /users/${username}`, {
-        username: 'USERNAME'
-    })
+    try {
+        const user = await octokit.request(`GET /users/${username}`, {
+            username: 'USERNAME'
+        });
 
-    window.console.log([user]);
+        return user.data;
+    } catch (error) {
+        throw error;
+    }
+
 }
 
 export default {
