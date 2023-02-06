@@ -44,9 +44,20 @@ const onSearch = async () => {
     const input = document.querySelector('.search__input');
     try {
         const data = await controller.getUserName(input.value);
-        const { avatar_url, created_at, name, login, bio } = data;
-        const { public_repos, followers, following } = data;
-        const { blog, company, location, twitter_username } = data;
+        const {
+            avatar_url,
+            created_at,
+            name,
+            login,
+            bio,
+            public_repos,
+            followers,
+            following,
+            blog,
+            company,
+            location,
+            twitter_username
+        } = data;
 
         console.log({ avatar_url, created_at, name, login, bio, public_repos, followers, following, blog, company, location, twitter_username });
     } catch (error) {
